@@ -1,23 +1,23 @@
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length != arr2.length) {
-   return false;
+  if (arr1.length !== arr2.length) {
+    return false;
   }
   for (let i = 0; i < arr1.length; i++) {
-   if (arr1[i] !== arr2[i]) {
-     return false;
-   }
-  } 
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
   return true;
- };
+};
 
- const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   const result = eqArrays(arr1, arr2);
   if (!result) {
-    console.log("🛑🛑🛑 whoops, these arrays are not equal")
+    console.log("🛑🛑🛑 whoops, these arrays are not equal");
   } else {
-    console.log("✅✅✅ nice, these arrays are equal")
+    console.log("✅✅✅ nice, these arrays are equal");
   }
- };
+};
 
 const without = function(source, itemToRemove) {
   let newArr = [...source];
@@ -29,7 +29,7 @@ const without = function(source, itemToRemove) {
     }
   }
   return newArr;
-}
+};
 //Tests
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
