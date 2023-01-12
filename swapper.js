@@ -8,7 +8,7 @@ const swapper = function (key1, object1, key2, object2) {
   object1[key1] = key2Object;
   object2[key2] = key1Object;
 
-  // object1[key1] = object2[key2]
+  // object1[key1] = object2[key2] (want to ask why this almost works but not quite, last digit is messed up)
   // Put your solution here
 
   console.log("object1: ", object1);
