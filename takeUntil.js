@@ -26,7 +26,7 @@ const assertArraysEqual = function(arr1, arr2) {
 const takeUntil = function(array, callback) {
   array.forEach(function(item, index) {
     if (callback(item)) {
-      array = array.slice(0, index);
+      array = array.slice(0, index); // how could I change this to use break instead?
     }
   });
   return array;
