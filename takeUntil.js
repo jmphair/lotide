@@ -24,7 +24,7 @@ const assertArraysEqual = function(arr1, arr2) {
 // ACTUAL WORK
 
 const takeUntil = function(array, callback) {
-  array.map(function(item, index) {
+  array.forEach(function(item, index) {
     if (callback(item)) {
       array = array.slice(0, index);
     }
